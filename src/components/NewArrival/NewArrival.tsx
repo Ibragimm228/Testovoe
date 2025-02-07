@@ -4,15 +4,11 @@ import { Truck, HeadphonesIcon, ShieldCheck } from 'lucide-react';
 const NewArrival = () => {
   return (
     <div className="container mx-auto px-4 mt-16 mb-16">
-      {/* Header */}
       <div className="mb-8">
         <div className="text-red-500 font-semibold mb-2">Featured</div>
         <h2 className="text-3xl font-bold">New Arrival</h2>
       </div>
-
-      {/* Featured Products Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
-        {/* PlayStation 5 */}
         <div className="relative bg-black text-white rounded-lg overflow-hidden">
           <img
             src="/купите/ployka.png"
@@ -27,10 +23,7 @@ const NewArrival = () => {
             </button>
           </div>
         </div>
-
-        {/* Right Side Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Women's Collections */}
           <div className="relative bg-black text-white rounded-lg overflow-hidden col-span-2">
             <img
               src="/купите/woman.webp"
@@ -45,8 +38,6 @@ const NewArrival = () => {
               </button>
             </div>
           </div>
-
-          {/* Speakers */}
           <div className="relative bg-black text-white rounded-lg overflow-hidden">
             <img
               src="/купите/muzika.jpg"
@@ -61,8 +52,6 @@ const NewArrival = () => {
               </button>
             </div>
           </div>
-
-          {/* Perfume */}
           <div className="relative bg-black text-white rounded-lg overflow-hidden">
             <img
               src="/купите/savuage.webp"
@@ -79,8 +68,6 @@ const NewArrival = () => {
           </div>
         </div>
       </div>
-
-      {/* Services Section */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="flex flex-col items-center text-center">
           <div className="bg-gray-100 p-4 rounded-full mb-4">
@@ -89,7 +76,6 @@ const NewArrival = () => {
           <h3 className="font-bold mb-2">FREE AND FAST DELIVERY</h3>
           <p className="text-gray-600 text-sm">Free delivery for all orders over $140</p>
         </div>
-
         <div className="flex flex-col items-center text-center">
           <div className="bg-gray-100 p-4 rounded-full mb-4">
             <HeadphonesIcon className="w-8 h-8" />
@@ -97,7 +83,6 @@ const NewArrival = () => {
           <h3 className="font-bold mb-2">24/7 CUSTOMER SERVICE</h3>
           <p className="text-gray-600 text-sm">Friendly 24/7 customer support</p>
         </div>
-
         <div className="flex flex-col items-center text-center">
           <div className="bg-gray-100 p-4 rounded-full mb-4">
             <ShieldCheck className="w-8 h-8" />

@@ -91,7 +91,6 @@ const ExploreProducts = () => {
 
   return (
     <div className="container mx-auto px-4 mt-16">
-      {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <div>
           <div className="text-red-500 font-semibold mb-2">Our Products</div>
@@ -112,8 +111,6 @@ const ExploreProducts = () => {
           </button>
         </div>
       </div>
-
-      {/* Products Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {products.map((product) => (
           <div key={product.id} className="bg-gray-50 rounded-lg p-4 relative group">
@@ -122,8 +119,6 @@ const ExploreProducts = () => {
                 NEW
               </div>
             )}
-            
-            {/* Wishlist and Quick View */}
             <div className="absolute top-4 right-4 flex flex-col gap-2">
               <button className="p-2 rounded-full bg-white shadow-md hover:bg-gray-100">
                 <Heart className="w-5 h-5" />
@@ -132,8 +127,6 @@ const ExploreProducts = () => {
                 <Eye className="w-5 h-5" />
               </button>
             </div>
-
-            {/* Product Image */}
             <div className="relative aspect-square mb-4 overflow-hidden rounded-lg">
               <img
                 src={product.image}
@@ -144,8 +137,6 @@ const ExploreProducts = () => {
                 Add To Cart
               </button>
             </div>
-
-            {/* Product Info */}
             <h3 className="font-semibold mb-2">{product.name}</h3>
             <div className="flex gap-2 mb-2">
               <span className="text-red-500 font-semibold">${product.price}</span>
@@ -154,8 +145,6 @@ const ExploreProducts = () => {
               <div className="flex">{renderStars(product.rating)}</div>
               <span className="text-gray-500">({product.reviews})</span>
             </div>
-
-            {/* Color Options */}
             {product.colors && (
               <div className="flex gap-2">
                 {product.colors.map((color) => (
@@ -170,8 +159,6 @@ const ExploreProducts = () => {
           </div>
         ))}
       </div>
-
-      {/* View All Button */}
       <div className="text-center mt-8">
         <button className="bg-red-500 text-white px-8 py-3 rounded-md hover:bg-red-600 transition">
           View All Products

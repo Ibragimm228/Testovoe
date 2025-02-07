@@ -17,7 +17,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
   return (
     <div className="bg-white rounded-lg p-4 relative group shadow-md">
-      {/* Discount Badge */}
       {product.discount > 0 && (
         <div className="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 rounded-md text-sm flex items-center gap-2 z-10">
           <div className="w-6 h-6 flex items-center justify-center bg-red-600 rounded-md text-xs font-bold">
@@ -25,8 +24,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
           </div>
         </div>
       )}
-
-      {/* Wishlist and Quick View */}
       <div className="absolute top-4 right-4 flex flex-col gap-2 z-10">
         <button className="p-2 rounded-full bg-white shadow-md hover:bg-gray-100">
           <Heart className="w-5 h-5 text-gray-500 hover:text-red-500" />
@@ -35,8 +32,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
           <Eye className="w-5 h-5 text-gray-500 hover:text-blue-500" />
         </button>
       </div>
-
-      {/* Product Image */}
       <div className="relative aspect-square mb-4 overflow-hidden rounded-lg">
         <img
           src={product.image}
@@ -47,8 +42,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
           Add To Cart
         </button>
       </div>
-
-      {/* Product Info */}
       <h3 className="font-semibold mb-2">{product.name}</h3>
       <div className="flex gap-2 mb-2">
         <span className="text-red-500 font-semibold">${product.price}</span>

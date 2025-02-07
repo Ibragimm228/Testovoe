@@ -17,7 +17,6 @@ const FlashSales = () => {
 
   return (
     <div className="container mx-auto px-4 mt-16">
-      {/* Header with Timer */}
       <div className="flex items-center justify-between mb-8">
         <div>
           <div className="text-red-500 font-semibold mb-2">Today's</div>
@@ -43,8 +42,6 @@ const FlashSales = () => {
           </div>
         </div>
       </div>
-
-      {/* Products Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {products
           .slice(currentProductPage * 4, (currentProductPage + 1) * 4)
@@ -52,8 +49,6 @@ const FlashSales = () => {
             <ProductCard key={product.id} product={product} />
           ))}
       </div>
-
-      {/* View All Button */}
       <div className="text-center mt-8">
         <button className="bg-red-500 text-white px-8 py-3 rounded-md hover:bg-red-600 transition">
           View All Products

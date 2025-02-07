@@ -6,7 +6,6 @@ const Footer = () => {
     <footer className="bg-black text-white pt-20 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-16">
-          {/* Exclusive Section */}
           <div className="md:col-span-1">
             <h2 className="text-2xl font-bold mb-6">Exclusive</h2>
             <h3 className="text-lg mb-4">Subscribe</h3>
@@ -22,8 +21,6 @@ const Footer = () => {
               </button>
             </div>
           </div>
-
-          {/* Support Section */}
           <div className="md:col-span-1">
             <h2 className="text-2xl font-bold mb-6">Support</h2>
             <address className="not-italic">
@@ -33,8 +30,6 @@ const Footer = () => {
               <p>+88015-88888-9999</p>
             </address>
           </div>
-
-          {/* Account Section */}
           <div className="md:col-span-1">
             <h2 className="text-2xl font-bold mb-6">Account</h2>
             <nav>
@@ -47,8 +42,6 @@ const Footer = () => {
               </ul>
             </nav>
           </div>
-
-          {/* Quick Link Section */}
           <div className="md:col-span-1">
             <h2 className="text-2xl font-bold mb-6">Quick Link</h2>
             <nav>
@@ -60,12 +53,9 @@ const Footer = () => {
               </ul>
             </nav>
           </div>
-
-          {/* Download App Section */}
           <div className="md:col-span-1">
             <h2 className="text-2xl font-bold mb-6">Download App</h2>
             <p className="text-sm text-gray-400 mb-4">Save $3 with App New User Only</p>
-            
             <div className="flex gap-4 mb-4">
               <div className="qr-code">
                 <QrCode className="w-24 h-24" />
@@ -87,7 +77,6 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-
             <div className="flex gap-4">
               <a href="#" className="hover:text-gray-300">
                 <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
@@ -112,8 +101,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* Copyright */}
         <div className="text-center pt-8 border-t border-gray-800">
           <p className="text-gray-500">© Copyright Rimel 2022. All right reserved</p>
         </div>

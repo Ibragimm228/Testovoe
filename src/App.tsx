@@ -18,7 +18,6 @@ function App() {
       <Navigation />
       
       <main>
-        {/* Categories Sidebar and Hero Section */}
         <div className="container mx-auto px-4 flex gap-8 mt-8">
           <CategorySidebar />
           <HeroSlider />

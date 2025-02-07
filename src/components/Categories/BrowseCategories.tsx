@@ -25,7 +25,6 @@ const BrowseCategories = () => {
 
   return (
     <div className="container mx-auto px-4 mt-16">
-      {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <div>
           <div className="text-red-500 font-semibold mb-2">Categories</div>
@@ -48,8 +47,6 @@ const BrowseCategories = () => {
           </button>
         </div>
       </div>
-
-      {/* Category Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         {categories
           .slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage)

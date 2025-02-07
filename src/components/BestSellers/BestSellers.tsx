@@ -50,7 +50,6 @@ const BestSellers = () => {
 
   return (
     <div className="container mx-auto px-4 mt-16">
-      {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <div>
           <div className="text-red-500 font-semibold mb-2">This Month</div>
@@ -60,12 +59,9 @@ const BestSellers = () => {
           View All
         </button>
       </div>
-
-      {/* Products Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {bestSellers.map((product) => (
           <div key={product.id} className="bg-gray-50 rounded-lg p-4 relative group shadow-md">
-            {/* Wishlist and Quick View */}
             <div className="absolute top-4 right-4 flex flex-col gap-2 z-10">
               <button className="p-2 rounded-full bg-white shadow-md hover:bg-gray-100">
                 <Heart className="w-5 h-5 text-gray-500 hover:text-red-500" />
@@ -74,8 +70,6 @@ const BestSellers = () => {
                 <Eye className="w-5 h-5 text-gray-500 hover:text-blue-500" />
               </button>
             </div>
-
-            {/* Product Image */}
             <div className="relative aspect-square mb-4 overflow-hidden rounded-lg">
               <img
                 src={product.image}
@@ -83,8 +77,6 @@ const BestSellers = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-
-            {/* Product Info */}
             <h3 className="font-semibold mb-2">{product.name}</h3>
             <div className="flex gap-2 mb-2">
               <span className="text-red-500 font-semibold">${product.price}</span>

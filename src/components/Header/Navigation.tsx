@@ -5,14 +5,12 @@ const Navigation = () => {
   return (
     <header className="container mx-auto px-4 py-4 flex items-center justify-between">
       <h1 className="text-2xl font-bold">Exclusive</h1>
-      
       <nav className="hidden md:flex space-x-8">
         <a href="#" className="hover:text-gray-600">Home</a>
         <a href="#" className="hover:text-gray-600">Contact</a>
         <a href="#" className="hover:text-gray-600">About</a>
         <a href="#" className="hover:text-gray-600">Sign Up</a>
       </nav>
-
       <div className="flex items-center space-x-6">
         <div className="relative">
           <input
